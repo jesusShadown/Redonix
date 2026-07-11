@@ -20,7 +20,7 @@ export default function Footer() {
       <div className="container footer__inner">
         <div className="footer__brand">
           <a href="#top" className="footer__logo">
-            <img src={logo} alt="Redonix" />
+            <img src={logo} alt="Redonix" width="214" height="46" />
           </a>
           <p>Producción, diseño y estrategia creativa para marcas y artistas.</p>
         </div>
