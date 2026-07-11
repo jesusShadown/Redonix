@@ -1,0 +1,38 @@
+.final-cta {
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta__glow {
+  width: 900px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.4;
+}
+
+.final-cta__box {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin-inline: auto;
+  text-align: center;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl) var(--space-lg);
+}
+
+.final-cta__title {
+  font-size: var(--fs-h2);
+  margin-bottom: var(--space-sm);
+}
+
+.final-cta__desc {
+  color: var(--color-text-secondary);
+  font-size: var(--fs-body-lg);
+  max-width: 520px;
+  margin-inline: auto;
+  margin-bottom: var(--space-lg);
+}

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(npm install)",
+      "PowerShell(npm run build 2>&1)",
+      "Bash(powershell -Command \"Get-ChildItem 'c:\\\\Users\\\\Dell\\\\Documents\\\\Landing_Redonix\\\\src\\\\assets\\\\Logos'\")"
+    ]
+  }
+}
