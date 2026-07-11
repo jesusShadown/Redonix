@@ -2,7 +2,7 @@ import { ArrowRight } from 'lucide-react'
 import Reveal from './shared/Reveal'
 import Button from './shared/Button'
 import { contact } from '../data/contact'
-import './FinalCta.css'
+// Estilos cargados desde src/styles/sections.css (ver islandRegistry.js).
 
 export default function FinalCta() {
   return (

@@ -15,7 +15,7 @@ import {
 import Reveal from './shared/Reveal'
 import Button from './shared/Button'
 import { services } from '../data/services'
-import './Services.css'
+// Estilos cargados desde src/styles/sections.css (ver islandRegistry.js).
 
 const ICON_MAP = {
   CalendarCheck2,

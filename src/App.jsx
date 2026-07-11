@@ -1,32 +1,23 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import ValueProps from './components/ValueProps'
-import Services from './components/Services'
-import Team from './components/Team'
-import Partners from './components/Partners'
-import Contact from './components/Contact'
-import FinalCta from './components/FinalCta'
-import Footer from './components/Footer'
+import { MAIN_ISLANDS, FOOTER_ISLAND } from './islandRegistry'
 
-// Nota: la página entera se pre-renderiza en build time (ver
-// src/entry-server.jsx + scripts/prerender.mjs), así que el contenido ya
-// está visible desde el primer HTML. Por eso aquí no usamos React.lazy:
-// dividir en chunks aparte solo agrega una cadena de solicitudes que React
-// tiene que resolver igual, de inmediato, para poder hidratar todo el árbol.
+// Solo Navbar + Hero se hidratan como parte de este árbol. Todo lo demás son
+// contenedores vacíos ("islas") que src/islands.js llena e hidrata por su
+// cuenta cuando el usuario hace scroll cerca — así su JS no se descarga hasta
+// que hace falta. El HTML real de cada isla se pre-renderiza aparte (ver
+// src/entry-server.jsx) e se inyecta en build time (ver scripts/prerender.mjs).
 export default function App() {
   return (
     <>
       <Navbar />
       <main>
         <Hero />
-        <ValueProps />
-        <Services />
-        <Team />
-        <Partners />
-        <Contact />
-        <FinalCta />
+        {MAIN_ISLANDS.map((island) => (
+          <div key={island.id} id={`island-${island.id}`} />
+        ))}
       </main>
-      <Footer />
+      <div id={`island-${FOOTER_ISLAND.id}`} />
     </>
   )
 }

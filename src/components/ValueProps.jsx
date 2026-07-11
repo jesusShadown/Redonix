@@ -1,6 +1,6 @@
 import { Eye, Target, Layers } from 'lucide-react'
 import Reveal from './shared/Reveal'
-import './ValueProps.css'
+// Estilos cargados desde src/styles/sections.css (ver islandRegistry.js).
 
 const CARDS = [
   {

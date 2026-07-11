@@ -28,7 +28,7 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="container navbar__inner">
         <a href="#top" className="navbar__logo">
-          <img src={logo} alt="Redonix" width="214" height="46" />
+          <img src={logo} alt="Redonix" width="214" height="46" loading="eager" fetchpriority="high" />
         </a>
 
         <nav className="navbar__links">

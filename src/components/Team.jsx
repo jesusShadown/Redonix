@@ -1,7 +1,7 @@
 import Reveal from './shared/Reveal'
 import Avatar from './shared/Avatar'
 import { team } from '../data/team'
-import './Team.css'
+// Estilos cargados desde src/styles/sections.css (ver islandRegistry.js).
 
 export default function Team() {
   return (
