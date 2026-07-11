@@ -1,23 +1,35 @@
+import { lazy, Suspense } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import { MAIN_ISLANDS, FOOTER_ISLAND } from './islandRegistry'
 
-// Solo Navbar + Hero se hidratan como parte de este árbol. Todo lo demás son
-// contenedores vacíos ("islas") que src/islands.js llena e hidrata por su
-// cuenta cuando el usuario hace scroll cerca — así su JS no se descarga hasta
-// que hace falta. El HTML real de cada isla se pre-renderiza aparte (ver
-// src/entry-server.jsx) e se inyecta en build time (ver scripts/prerender.mjs).
+// Todo lo que vive debajo del hero se divide en chunks aparte:
+// el navegador no tiene que parsear/ejecutar ese JS para pintar la primera vista.
+const ValueProps = lazy(() => import('./components/ValueProps'))
+const Services = lazy(() => import('./components/Services'))
+const Team = lazy(() => import('./components/Team'))
+const Partners = lazy(() => import('./components/Partners'))
+const Contact = lazy(() => import('./components/Contact'))
+const FinalCta = lazy(() => import('./components/FinalCta'))
+const Footer = lazy(() => import('./components/Footer'))
+
 export default function App() {
   return (
     <>
       <Navbar />
       <main>
         <Hero />
-        {MAIN_ISLANDS.map((island) => (
-          <div key={island.id} id={`island-${island.id}`} />
-        ))}
+        <Suspense fallback={null}>
+          <ValueProps />
+          <Services />
+          <Team />
+          <Partners />
+          <Contact />
+          <FinalCta />
+        </Suspense>
       </main>
-      <div id={`island-${FOOTER_ISLAND.id}`} />
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
     </>
   )
 }

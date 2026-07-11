@@ -6,15 +6,7 @@
       "Bash(powershell -Command \"Get-ChildItem 'c:\\\\Users\\\\Dell\\\\Documents\\\\Landing_Redonix\\\\src\\\\assets\\\\Logos'\")",
       "PowerShell(node \"C:\\\\Users\\\\Dell\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-Dell-Documents-Landing-Redonix\\\\4b2a015a-1931-4b08-841a-2b60c981c4b8\\\\scratchpad\\\\to-webp.mjs\")",
       "PowerShell(node scripts\\\\to-webp.mjs)",
-      "PowerShell(npm uninstall sharp 2>&1)",
-      "PowerShell(npm install --no-save sharp 2>&1)",
-      "PowerShell(node scripts\\\\resize-avatars.mjs)",
-      "Bash(grep -i \"\\\\.css$\")",
-      "Bash(grep -o 'html,\\\\s*body\\\\s*{[^}]*}' \"/c/Users/Dell/Documents/Landing_Redonix/dist/index.html\")",
-      "WebFetch(domain:api.github.com)",
-      "WebFetch(domain:www.googleapis.com)",
-      "Bash(awk '{ print length, \"chars\" }')",
-      "Bash(awk '{print $NF, $5}')"
+      "PowerShell(npm uninstall sharp 2>&1)"
     ]
   }
 }

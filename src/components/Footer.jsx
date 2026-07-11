@@ -2,7 +2,7 @@ import { Phone, MessageCircle, Instagram, Facebook } from 'lucide-react'
 import { contact, whatsappLink } from '../data/contact'
 import logo from '../assets/Logos/logo1-transparent.webp'
 import TikTokIcon from './shared/TikTokIcon'
-// Estilos cargados desde src/styles/sections.css (ver islandRegistry.js).
+import './Footer.css'
 
 const NAV = [
   { label: 'Servicios', href: '#servicios' },
@@ -20,7 +20,7 @@ export default function Footer() {
       <div className="container footer__inner">
         <div className="footer__brand">
           <a href="#top" className="footer__logo">
-            <img src={logo} alt="Redonix" width="214" height="46" loading="lazy" />
+            <img src={logo} alt="Redonix" />
           </a>
           <p>Producción, diseño y estrategia creativa para marcas y artistas.</p>
         </div>

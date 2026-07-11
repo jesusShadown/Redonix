@@ -3,7 +3,7 @@ import Reveal from './shared/Reveal'
 import Button from './shared/Button'
 import TikTokIcon from './shared/TikTokIcon'
 import { contact, whatsappLink } from '../data/contact'
-// Estilos cargados desde src/styles/sections.css (ver islandRegistry.js).
+import './Contact.css'
 
 const CHANNELS = [
   {

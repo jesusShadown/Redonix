@@ -1,7 +1,7 @@
 import { Handshake } from 'lucide-react'
 import Reveal from './shared/Reveal'
 import { partners } from '../data/partners'
-// Estilos cargados desde src/styles/sections.css (ver islandRegistry.js).
+import './Partners.css'
 
 export default function Partners() {
   return (
@@ -17,7 +17,7 @@ export default function Partners() {
             <Reveal key={partner.name} delay={i * 90} className="partner-card">
               <div className="partner-card__icon">
                 {partner.logo ? (
-                  <img src={partner.logo} alt={partner.name} loading="lazy" />
+                  <img src={partner.logo} alt={partner.name} />
                 ) : (
                   <Handshake size={20} strokeWidth={2} />
                 )}
