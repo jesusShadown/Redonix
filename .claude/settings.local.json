@@ -10,7 +10,10 @@
       "PowerShell(npm install --no-save sharp 2>&1)",
       "PowerShell(node scripts\\\\resize-avatars.mjs)",
       "Bash(grep -i \"\\\\.css$\")",
-      "Bash(grep -o 'html,\\\\s*body\\\\s*{[^}]*}' \"/c/Users/Dell/Documents/Landing_Redonix/dist/index.html\")"
+      "Bash(grep -o 'html,\\\\s*body\\\\s*{[^}]*}' \"/c/Users/Dell/Documents/Landing_Redonix/dist/index.html\")",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:www.googleapis.com)",
+      "Bash(awk '{ print length, \"chars\" }')"
     ]
   }
 }
