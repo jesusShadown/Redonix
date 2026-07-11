@@ -28,6 +28,11 @@ if (cssMatch) {
   console.log(`CSS inlineado (${(cssContent.length / 1024).toFixed(1)}KB) y quitado ${cssHref} de la petición de red`)
 }
 
+// Prioriza la descarga del bundle principal (ya no bloquea el pintado desde
+// que hidratamos diferido en main.jsx, pero conviene que llegue lo antes
+// posible para que la página sea interactiva pronto).
+html = html.replace('<script type="module"', '<script type="module" fetchpriority="high"')
+
 fs.writeFileSync(indexPath, html)
 fs.rmSync(path.join(root, 'dist-server'), { recursive: true, force: true })
 

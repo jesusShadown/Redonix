@@ -14,7 +14,15 @@ const app = (
 // scripts/prerender.mjs) para que el hero pinte sin esperar a React.
 // hydrateRoot toma ese HTML tal cual; en dev (#root vacío) usamos createRoot normal.
 if (container.hasChildNodes()) {
-  ReactDOM.hydrateRoot(container, app)
+  // Hidratar es trabajo pesado en el hilo principal (sobre todo en móvil).
+  // Se difiere un tick para que el navegador pinte primero el HTML estático
+  // ya visible, en vez de competir con la hidratación por el mismo frame.
+  const hydrate = () => ReactDOM.hydrateRoot(container, app)
+  if ('requestIdleCallback' in window) {
+    window.requestIdleCallback(hydrate, { timeout: 200 })
+  } else {
+    setTimeout(hydrate, 0)
+  }
 } else {
   ReactDOM.createRoot(container).render(app)
 }
