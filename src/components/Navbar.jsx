@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import Button from './shared/Button'
 import { contact } from '../data/contact'
-import logo from '../assets/Logos/logo1-transparent.png'
+import logo from '../assets/Logos/logo1-transparent.webp'
 import './Navbar.css'
 
 const LINKS = [

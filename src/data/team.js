@@ -1,7 +1,7 @@
-import sofiaRojasPhoto from '../assets/fotosIntegrantes/Sofía Rojas-optimized.jpg'
-import roninGinerPhoto from '../assets/fotosIntegrantes/Ronin Giner-optimized.jpg'
-import danielOlmosPhoto from '../assets/fotosIntegrantes/Daniel Olmos-optimized.jpg'
-import osmarOrtizPhoto from '../assets/fotosIntegrantes/Osmar Ortiz-optimized.jpg'
+import sofiaRojasPhoto from '../assets/fotosIntegrantes/Sofía Rojas-optimized.webp'
+import roninGinerPhoto from '../assets/fotosIntegrantes/Ronin Giner-optimized.webp'
+import danielOlmosPhoto from '../assets/fotosIntegrantes/Daniel Olmos-optimized.webp'
+import osmarOrtizPhoto from '../assets/fotosIntegrantes/Osmar Ortiz-optimized.webp'
 
 // Equipo — para actualizar una foto, reemplaza el archivo correspondiente en
 // src/assets/fotosIntegrantes/ (mismo nombre) o cambia el import de arriba.
