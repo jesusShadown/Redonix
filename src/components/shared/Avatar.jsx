@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './Avatar.css'
+// Estilos importados centralizadamente desde src/styles/global.css
 
 function getInitials(name) {
   return name

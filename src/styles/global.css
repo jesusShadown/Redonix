@@ -1,4 +1,16 @@
 @import './variables.css';
+@import '../components/Navbar.css';
+@import '../components/Hero.css';
+@import '../components/HeroVisual.css';
+@import '../components/ValueProps.css';
+@import '../components/Services.css';
+@import '../components/Team.css';
+@import '../components/Partners.css';
+@import '../components/Contact.css';
+@import '../components/FinalCta.css';
+@import '../components/Footer.css';
+@import '../components/shared/Button.css';
+@import '../components/shared/Avatar.css';
 
 * {
   margin: 0;

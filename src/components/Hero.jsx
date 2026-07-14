@@ -2,7 +2,7 @@ import { ArrowRight, Compass } from 'lucide-react'
 import Button from './shared/Button'
 import HeroVisual from './HeroVisual'
 import { contact } from '../data/contact'
-import './Hero.css'
+// Estilos importados centralizadamente desde src/styles/global.css
 
 export default function Hero() {
   return (

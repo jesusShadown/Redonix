@@ -1,7 +1,7 @@
 import Reveal from './shared/Reveal'
 import Avatar from './shared/Avatar'
 import { team } from '../data/team'
-import './Team.css'
+// Estilos importados centralizadamente desde src/styles/global.css
 
 export default function Team() {
   return (

@@ -1,7 +1,7 @@
 import { Handshake } from 'lucide-react'
 import Reveal from './shared/Reveal'
 import { partners } from '../data/partners'
-import './Partners.css'
+// Estilos importados centralizadamente desde src/styles/global.css
 
 export default function Partners() {
   return (

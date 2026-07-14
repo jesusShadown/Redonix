@@ -1,5 +1,5 @@
 import { Lightbulb, Phone, Palette, Clapperboard, PartyPopper, TrendingUp } from 'lucide-react'
-import './HeroVisual.css'
+// Estilos importados centralizadamente desde src/styles/global.css
 
 const STAGES = [
   { label: 'Idea', icon: Lightbulb },

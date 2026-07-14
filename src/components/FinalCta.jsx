@@ -2,7 +2,7 @@ import { ArrowRight } from 'lucide-react'
 import Reveal from './shared/Reveal'
 import Button from './shared/Button'
 import { contact } from '../data/contact'
-import './FinalCta.css'
+// Estilos importados centralizadamente desde src/styles/global.css
 
 export default function FinalCta() {
   return (

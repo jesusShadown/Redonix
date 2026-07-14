@@ -15,7 +15,7 @@ import {
 import Reveal from './shared/Reveal'
 import Button from './shared/Button'
 import { services } from '../data/services'
-import './Services.css'
+// Estilos importados centralizadamente desde src/styles/global.css
 
 const ICON_MAP = {
   CalendarCheck2,

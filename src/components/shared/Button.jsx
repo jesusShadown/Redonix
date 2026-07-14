@@ -1,4 +1,4 @@
-import './Button.css'
+// Estilos importados centralizadamente desde src/styles/global.css
 
 export default function Button({
   children,

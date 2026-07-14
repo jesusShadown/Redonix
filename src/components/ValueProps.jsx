@@ -1,6 +1,6 @@
 import { Eye, Target, Layers } from 'lucide-react'
 import Reveal from './shared/Reveal'
-import './ValueProps.css'
+// Estilos importados centralizadamente desde src/styles/global.css
 
 const CARDS = [
   {

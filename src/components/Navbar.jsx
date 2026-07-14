@@ -3,7 +3,7 @@ import { Menu, X } from 'lucide-react'
 import Button from './shared/Button'
 import { contact } from '../data/contact'
 import logo from '../assets/Logos/logo1-transparent.webp'
-import './Navbar.css'
+// Estilos importados centralizadamente desde src/styles/global.css
 
 const LINKS = [
   { label: 'Servicios', href: '#servicios' },

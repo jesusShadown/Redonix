@@ -3,7 +3,7 @@ import Reveal from './shared/Reveal'
 import Button from './shared/Button'
 import TikTokIcon from './shared/TikTokIcon'
 import { contact, whatsappLink } from '../data/contact'
-import './Contact.css'
+// Estilos importados centralizadamente desde src/styles/global.css
 
 const CHANNELS = [
   {

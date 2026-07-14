@@ -2,7 +2,7 @@ import { Phone, MessageCircle, Instagram, Facebook } from 'lucide-react'
 import { contact, whatsappLink } from '../data/contact'
 import logo from '../assets/Logos/logo1-transparent.webp'
 import TikTokIcon from './shared/TikTokIcon'
-import './Footer.css'
+// Estilos importados centralizadamente desde src/styles/global.css
 
 const NAV = [
   { label: 'Servicios', href: '#servicios' },
