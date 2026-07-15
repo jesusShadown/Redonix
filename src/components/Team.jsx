@@ -18,7 +18,7 @@ export default function Team() {
         <div className="team__grid">
           {team.map((member, i) => (
             <Reveal key={member.name} delay={(i % 3) * 90} className="team-card">
-              <Avatar src={member.photo} name={member.name} size={88} />
+              <Avatar photo={member.photo} name={member.name} size={88} />
               <h3 className="team-card__name">{member.name}</h3>
               <p className="team-card__role">{member.role}</p>
               <p className="team-card__bio">{member.bio}</p>

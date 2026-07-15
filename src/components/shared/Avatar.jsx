@@ -12,14 +12,19 @@ function getInitials(name) {
 }
 
 // Muestra la foto si se proporciona una; si no hay foto o falla al cargar, cae a un avatar con iniciales.
-export default function Avatar({ src, name, size = 96 }) {
+// "photo" es { src, srcSet } (ver src/data/team.js) para que el navegador
+// elija el tamaño según la densidad de pantalla, en vez de bajar siempre la
+// versión más grande.
+export default function Avatar({ photo, name, size = 96 }) {
   const [errored, setErrored] = useState(false)
 
   return (
     <div className="avatar" style={{ width: size, height: size }}>
-      {src && !errored ? (
+      {photo && !errored ? (
         <img
-          src={src}
+          src={photo.src}
+          srcSet={photo.srcSet}
+          sizes={`${size}px`}
           alt={name}
           onError={() => setErrored(true)}
           loading="lazy"
