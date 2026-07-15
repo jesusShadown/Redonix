@@ -1,6 +1,5 @@
 import { ArrowRight, Compass } from 'lucide-react'
 import Button from './shared/Button'
-import HeroVisual from './HeroVisual'
 import { contact } from '../data/contact'
 // Estilos importados centralizadamente desde src/styles/global.css
 
@@ -14,8 +13,9 @@ export default function Hero() {
         <div className="hero__content">
           <span className="eyebrow">Producción · Diseño · Estrategia</span>
 
-          <h1 >
-            De tu idea al escenario:Somos tú mejor aliado  </h1>
+          <h1 className="hero__title">
+            De tu idea al escenario: Somos tú mejor aliado
+          </h1>
 
           <p className="hero__subtitle">
             Integramos producción, creatividad y operación en un solo equipo para marcas, artistas y músicos
@@ -44,8 +44,6 @@ export default function Hero() {
             
           </div>
         </div>
-
-        <HeroVisual />
       </div>
     </section>
   )

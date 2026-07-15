@@ -1,7 +1,6 @@
 @import './variables.css';
 @import '../components/Navbar.css';
 @import '../components/Hero.css';
-@import '../components/HeroVisual.css';
 @import '../components/ValueProps.css';
 @import '../components/Services.css';
 @import '../components/Team.css';

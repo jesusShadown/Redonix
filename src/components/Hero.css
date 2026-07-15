@@ -104,8 +104,4 @@
   .hero {
     padding-top: calc(var(--space-3xl) + var(--space-lg));
   }
-  .hero__inner {
-    grid-template-columns: 1.05fr 0.95fr;
-    gap: var(--space-xl);
-  }
 }

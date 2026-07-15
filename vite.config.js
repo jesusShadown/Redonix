@@ -10,6 +10,10 @@ export default defineConfig(({ command }) => ({
   build: {
     target: 'es2020',
     cssMinify: true,
+    // Sin esto, Vite embebe las imágenes chicas (<4KB) como base64 dentro
+    // del JS/CSS. Eso rompe el objetivo de usar srcset: el navegador ya no
+    // puede elegir bajar solo una variante, todas quedan pegadas al bundle.
+    assetsInlineLimit: 0,
   },
   esbuild: {
     // Solo se eliminan en build de producción; en dev se conservan para depurar.
