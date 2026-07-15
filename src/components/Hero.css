@@ -57,15 +57,7 @@
   color: var(--color-text-secondary);
   max-width: 540px;
   margin-bottom: var(--space-lg);
-  content-visibility: auto;
-  contain-intrinsic-size: 500px;
-  /* Optimización para renderizado diferido */
-  content-visibility: auto;
-  contain-intrinsic-size: 500px;
 
-  /* Optimización para el FCP (Prioridad y GPU) */
-  min-height: 1.5em;        /* Reserva el espacio para evitar saltos */
-  will-change: transform;   /* Prepara la tarjeta gráfica para la animación */
 }
 
 .hero__actions {
