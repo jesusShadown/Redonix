@@ -14,9 +14,8 @@ export default function Hero() {
         <div className="hero__content">
           <span className="eyebrow">Producción · Diseño · Estrategia</span>
 
-          <h1 className="hero__title">
-            De tu idea al escenario: <span className="hero__title-accent">Somos tú mejor aliado</span>
-          </h1>
+          <h1 >
+            De tu idea al escenario:Somos tú mejor aliado  </h1>
 
           <p className="hero__subtitle">
             Integramos producción, creatividad y operación en un solo equipo para marcas, artistas y músicos
